@@ -3,10 +3,201 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-light{
+  --description-color: #FF8DCB;
+  --bg-color-theme: #FFC2E6;
+  --title-color: #FFC2E6;
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-color: var(--bg-color-theme);
+}
+
+.header{
+  display: flex;
+  position: relative;
+  max-width: 375px;
+  height: 668px;
+  flex-direction: column;
+  background: url(../images/cover-image-dark.png), lightgray 50% / cover no-repeat;
+
+}
+
+.header__decorated-element{
+  display: inline-flex;
+  position: absolute;
+  padding: 10px 10px 0px 304px;
+  column-gap: 10px;
+}
+
+.header__decorated-element-name{
+  color: var(--description-color);
+  text-align: center;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.header__decorated-element-eclipse{
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--description-color);
+  border-right: 1px solid var(--description-color);
+}
+
+.header__theme-menu{
+  padding-top: 75px;
+}
+
+.header__theme-menu-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+.header__theme-menu-item{
+  display: inline-flex;
+  height: 26px;
+  padding: 0px 13px;
+  justify-content: end;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header__theme-menu-button{
+  color: var(--description-color);
+  text-align: center;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: lowercase;
+  line-height: 18px; /* 100% */
+  background-color: transparent;
+  border: none;
+}
+
+.header__title{
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px var(--description-color);
+  font-family: "IBM Plex Mono", sans-serif;
+  margin-top: 65px;
+  font-size: 116px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+  text-transform: lowercase;
+  padding: 0px 10px 0px 10px;
+}
+
+.header__description{
+  background: var(--description-color);
+  margin: 55px 10px 0px 10px;
+}
+
+.header__description-text{
+  color: var(--bg-color-theme);
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  padding: 40px 10px 0 10px;
+  background-color: var(--bg-color-theme);
+  gap: 50px;
+}
+
+.main:first-child{
+  gap: 0px;
+}
+
+.main__section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main__section-title{
+  color: var(--description-color);
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  height: fit-content;
+  line-height: 23.4px; /* 130% */
+}
+
+.main__section-content{
+  display: grid;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.main__section-content-title{
+  display: flex;
+  color: var(--bg-color-theme);
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  justify-content: start;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+  background-color: var(--description-color);
+}
+
+.main__section-content-text{
+  color: #F1B2CE;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+}
+
+.bold-text{
+  font-weight: 700;
+}
+
+.main__section-image{
+  max-width: 355px;
+}
+
+.footer{
+  width: 375px;
+  height: 668px;
+  flex-shrink: 0;
+  background: var(--bg-color-theme);
+}
+
+.footer__text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DB00FF;
+  text-shadow: 2px 2px 0px var(--description-color);
+  font-family: "IBM Plex Mono";
+  font-size: 116px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+      /* Дублируем переменные светлой темы */    
+      --description-color: #FF8DCB;
+      --bg-color-theme: #FFC2E6;
+      --title-color: #FF0070;
+    }
 }
