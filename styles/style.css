@@ -1,5 +1,183 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  color: var(--color-main-text);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background: var(--background-image) no-repeat top center,
+  var(--background-color);
+  background-attachment: fixed;
+}
+
+.header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  height: 668px;
+}
+
+.header__decorated-element{
+  position: absolute;
+  display: inline-flex;
+  column-gap: 10px;
+  padding: 10px 10px 0px 304px;
+}
+
+.header__decorated-element-name{
+  color: var(--shadow-color);
+  font-family: var(--font-IBM);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px;
+  text-align: center;
+}
+
+.header__decorated-element-eclipse{
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.header__theme-menu{
+  padding-top: 75px;
+}
+
+.header__theme-menu-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+.header__theme-menu-item{
+  display: inline-flex;
+  flex-shrink: 0;
+  justify-content: end;
+  align-items: center;
+  height: 26px;
+  padding: 0px 13px;
+}
+
+.header__theme-menu-button{
+  border: none;
+  color: var(--description-color);
+  font-family: var(--font-IBM);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 18px; /* 100% */
+  text-align: center;
+  text-transform: lowercase;
+  background-color: transparent;
+}
+
+.header__title{
+  margin-top: 65px;
+  padding: 0px 10px 0px 10px;
+  color: var(--color-title);
+  font-family: var(--font-IBM);
+  font-weight: 700;
+  font-size: 116px;
+  font-style: normal;
+  line-height: 82.5%; /* 95.7px */
+  text-transform: lowercase;
+  text-shadow: 4px 4px 0px var(--shadow-color);
+}
+
+.header__description{
+  margin: 55px 10px 0px 10px;
+  background: var(--description-color);
+}
+
+.header__description-text{
+  color: var(--description-text-color);
+  font-family: var(--font-IBM);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px; /* 130% */
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px 10px 0 10px;
+  background-color: var(--background-color);
+}
+
+.main:first-child{
+  gap: 0px;
+}
+
+.main__section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main__section-title{
+  height: fit-content;
+  color: var(--description-color);
+  font-family: var(--font-IBM);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px; /* 130% */
+}
+
+.main__section-content{
+  display: grid;
+  flex-shrink: 0;
+  gap: 10px;
+}
+
+.main__section-content-title{
+  display: flex;
+  justify-content: start;
+  color: var(--color-main-text);
+  font-family: var(--font-IBM);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px; /* 130% */
+  background-color: var(--description-color);
+}
+
+.main__section-content-text{
+  color: var(--section-text-color);
+  font-family: var(--font-IBM);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px; /* 130% */
+}
+
+.bold-text{
+  font-weight: 700;
+}
+
+.main__section-image{
+  max-width: 355px;
+}
+
+.footer{
+  flex-shrink: 0;
+  width: 375px;
+  height: 668px;
+  background: var(--background-color);
+}
+
+.footer__text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-title);
+  font-family: var(--font-IBM);
+  font-weight: 700;
+  font-size: 116px;
+  font-style: normal;
+  line-height: 82.5%; /* 95.7px */
+  text-shadow: 4px 4px 0px var(--shadow-color);
 }
