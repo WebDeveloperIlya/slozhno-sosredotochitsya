@@ -3,7 +3,7 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-dark{
+:root.theme_dark{
   --description-color: #FF0070;
   --bg-color-theme: #000028;
   --title-color: #FF0070;

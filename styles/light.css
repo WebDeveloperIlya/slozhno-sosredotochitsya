@@ -3,7 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-light{
+:root.theme_light{
   --description-color: #FF8DCB;
   --bg-color-theme: #FFC2E6;
   --title-color: #FFC2E6;
