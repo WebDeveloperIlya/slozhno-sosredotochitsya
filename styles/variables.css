@@ -1,39 +1,16 @@
 :root{
-  --font-IBM: "IBM Plex Mono", sans-serif;
+  --font-IBM: "IBM Plex Mono", Arial, sans-serif;
+  --color-main-text: #f1b2ce;
+  --color-title: #db00ff;
+  --shadow-color: #ff0070;
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
+  --description-color: var(--shadow-color);
+  --description-text-color: var(--background-color);
+  --section-text-color: var(--color-main-text);
+  --border-color: var(--color-main-text);
 }
 
 .page {
   background-attachment: fixed;
-}
-
-@media (prefers-color-scheme: light){
-  :root .theme_light{
-    --color-main-text: #353430;
-    --color-title: #ffc2e6;
-    --shadow-color: #FF8DCB;
-    --background-image: url(../images/cover-image-light.png);
-    --background-color: #fff1f7;
-    --description-color: var(--shadow-color);
-    --description-text-color: var(--color-main-text);
-    --section-text-color: var(--color-main-text);
-    --border-color: var(--color-main-text);
-    .header__decorated-element{
-      visibility: hidden;
-    }
-    
-  }
-}
-
-@media (prefers-color-scheme: dark){
-  :root .theme_dark{
-    --color-main-text: #f1b2ce;
-    --color-title: #db00ff;
-    --shadow-color: #ff0070;
-    --background-image: url(../images/cover-image-dark.png);
-    --background-color: #000028;
-    --description-color: var(--shadow-color);
-    --description-text-color: var(--background-color);
-    --section-text-color: var(--color-main-text);
-    --border-color: var(--color-main-text);
-  } 
 }
