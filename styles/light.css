@@ -9,11 +9,11 @@
   --section-text-color: var(--color-main-text);
   --border-color: var(--color-main-text);
   --color-section-title: var(--color-main-text);
-  .header__decorated-element{
-    visibility: hidden;
-  }
+  
 }
-
+.header__decorated-element{
+  visibility: hidden;
+}
 @media (prefers-color-scheme: light){
   :root{
     --color-main-text: #353430;

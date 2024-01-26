@@ -11,7 +11,3 @@
   --border-color: var(--color-main-text);
   --color-section-title: var(--background-color);
 }
-
-.page {
-  background-attachment: fixed;
-}
