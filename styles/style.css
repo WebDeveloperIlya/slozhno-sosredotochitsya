@@ -152,6 +152,7 @@
 .main__section-title{
   height: fit-content;
   color: var(--color-section-title);
+  background-color: var(--description-color);
   font-family: var(--font-IBM);
   font-weight: 700;
   font-size: 18px;
