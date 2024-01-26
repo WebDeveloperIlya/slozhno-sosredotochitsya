@@ -25,6 +25,18 @@
   left: 304px;
 }
 
+.header__decorated-element-eclipse::after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 304px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 4px var(--shadow-color);
+  background-color: var(--shadow-color);
+  inline-size: 7px;
+  block-size: 7px;
+}
+
 .header__decorated-element-name{
   color: var(--shadow-color);
   font-family: var(--font-IBM);
@@ -41,8 +53,6 @@
   border-top: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
 }
-
-
 
 .header__theme-menu{
   padding-top: 75px;
@@ -77,12 +87,11 @@
   background-color: transparent;
 }
 
-
 .header__title{
-  margin-top: 65px;
-  padding: 0px 10px 0px 10px;
+  display: flex;
   justify-content: start;
-  color: var(--color-title);
+  align-items: center;
+  color: var( --color-title);
   font-family: var(--font-IBM);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -142,7 +151,7 @@
 
 .main__section-title{
   height: fit-content;
-  color: var(--description-color);
+  color: var(--color-section-title);
   font-family: var(--font-IBM);
   font-weight: 700;
   font-size: 18px;
@@ -159,7 +168,7 @@
 .main__section-content-title{
   display: flex;
   justify-content: start;
-  color: var(--color-main-text);
+  color: var(--color-section-title);
   font-family: var(--font-IBM);
   font-weight: 400;
   font-size: 18px;
@@ -197,6 +206,7 @@
 .footer__text {
   justify-self: center;
   align-self: center;
+  margin-top: 0;
   text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
@@ -288,6 +298,23 @@
 }
 
 @media (width >= 1024px){
+  .main__section:first-child{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .main__section-content:nth-child(2){
+    grid-column-start: 2;
+  }
+
+  .main__section-content-gap{
+    display: contents;
+    row-gap: 20px;
+  }
+
+  .main__section-content-title{
+    max-height: 23px;
+  }
+
   .main__section:nth-child(2){
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -296,6 +323,12 @@
       grid-row-start: 2;
       width: auto;
     }
+  }
+}
+
+@media (width > 375){
+  html{
+    overflow-x: hidden;
   }
 }
 

@@ -1,4 +1,4 @@
-:root .theme_dark{
+.page.theme_dark{
   --color-main-text: #f1b2ce;
   --color-title: #db00ff;
   --shadow-color: #ff0070;
@@ -8,4 +8,5 @@
   --description-text-color: var(--background-color);
   --section-text-color: var(--color-main-text);
   --border-color: var(--color-main-text);
+  --color-section-title: var(--background-color);
 }
