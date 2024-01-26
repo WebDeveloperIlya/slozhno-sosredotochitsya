@@ -9,4 +9,8 @@
   --section-text-color: var(--color-main-text);
   --border-color: var(--color-main-text);
   --color-section-title: var(--background-color);
+  --rec-decoration: var(--shadow-color);
+  --button-hover: var(--background-color);
+  --button-visible: var(--shadow-color);
+  --menu: var(--shadow-color);
 }
