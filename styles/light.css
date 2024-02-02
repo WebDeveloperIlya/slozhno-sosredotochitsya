@@ -10,12 +10,20 @@
   --border-color: var(--color-main-text);
   --color-section-title: var(--color-main-text);
   --rec-decoration: transparent;
-  --button-hover: var(--background-color);
-  --button-visible: var(--shadow-color);
-  --menu: var(--color-main-text);
+  --link-hover: var(--color-main-text);
+  --button-hover: var(--button-visible);
+  --button-visible: #FF0070;
+  --menu: #FF0070;
+  --without-bg-title: var(--color-main-text);
+  .header__decorated-element{
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light){
+  .header__decorated-element{
+    display: none;
+  }
   :root{
   --color-main-text: #353430;
   --color-title: #ffc2e6;
@@ -28,9 +36,10 @@
   --border-color: var(--color-main-text);
   --color-section-title: var(--color-main-text);
   --rec-decoration: transparent;
-  --button-hover: var(--background-color);
+  --link-hover: var(--color-main-text);
+  --button-hover: var(--button-visible);
   --button-visible: #FF0070;
-  --menu: var(--color-main-text);
+  --menu: #FF0070;
+  --without-bg-title: var(--color-main-text);
   }
-  
 }
