@@ -10,9 +10,12 @@
   --border-color: var(--color-main-text);
   --color-section-title: var(--color-main-text);
   --rec-decoration: transparent;
+  --decoration-zone: var(--color-main-text);
   --link-hover: var(--color-main-text);
-  --button-hover: var(--button-visible);
-  --button-visible: #FF0070;
+  --button: var(--color-main-text);
+  --button-hover: var(--color-main-text);
+  --button-visible: var(--color-main-text);
+  --button-active: var(--color-main-text);
   --menu: #FF0070;
   --without-bg-title: var(--color-main-text);
   .header__decorated-element {
@@ -37,6 +40,7 @@
   --color-section-title: var(--color-main-text);
   --rec-decoration: transparent;
   --link-hover: var(--color-main-text);
+  --button: var(--color-main-text);
   --button-hover: var(--button-visible);
   --button-visible: #FF0070;
   --menu: #FF0070;
