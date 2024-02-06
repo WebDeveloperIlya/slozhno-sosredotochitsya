@@ -13,7 +13,7 @@
   --decoration-zone: var(--shadow-color);
   --link-hover: var(--color-main-text);
   --button: var(--shadow-color);
-  --button-hover: var(--shadow-color);
+  --button-hover: #FF007066;
   --button-visible: var(--shadow-color);
   --button-active: var(--shadow-color);
   --menu: var(--shadow-color);

@@ -13,7 +13,7 @@
   --decoration-zone: var(--color-main-text);
   --link-hover: var(--color-main-text);
   --button: var(--color-main-text);
-  --button-hover: var(--color-main-text);
+  --button-hover:#32312D66;
   --button-visible: var(--color-main-text);
   --button-active: var(--color-main-text);
   --menu: #FF0070;
