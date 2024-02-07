@@ -180,13 +180,6 @@
   background: var(--description-color);
 }
 
-
-@media (768px <= width < 1024px){
-  .header__description-text{
-    max-width: 365px;
-  }
-}
-
 .main{
   display: flex;
   flex-direction: column;
@@ -397,7 +390,7 @@
 
 @media (768px <= width < 1024px){
   .header__description{
-    margin: 162px 0px 183px 0px;
+    margin: 162px 20px 183px 0px;
   }
 }
 
