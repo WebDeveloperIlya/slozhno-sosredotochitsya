@@ -28,22 +28,24 @@
     display: none;
   }
   :root{
-  --color-main-text: #353430;
-  --color-title: #ffc2e6;
-  --shadow-color: #FF8DCB;
-  --background-image: url(../images/cover-image-light.png);
-  --background-color: #fff1f7;
-  --description-color: var(--shadow-color);
-  --description-text-color: var(--color-main-text);
-  --section-text-color: var(--color-main-text);
-  --border-color: var(--color-main-text);
-  --color-section-title: var(--color-main-text);
-  --rec-decoration: transparent;
-  --link-hover: var(--color-main-text);
-  --button: var(--color-main-text);
-  --button-hover: var(--button-visible);
-  --button-visible: #FF0070;
-  --menu: #FF0070;
-  --without-bg-title: var(--color-main-text);
+    --color-main-text: #353430;
+    --color-title: #ffc2e6;
+    --shadow-color: #FF8DCB;
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
+    --description-color: var(--shadow-color);
+    --description-text-color: var(--color-main-text);
+    --section-text-color: var(--color-main-text);
+    --border-color: var(--color-main-text);
+    --color-section-title: var(--color-main-text);
+    --rec-decoration: transparent;
+    --decoration-zone: var(--color-main-text);
+    --link-hover: var(--color-main-text);
+    --button: var(--color-main-text);
+    --button-hover:#32312D66;
+    --button-visible: var(--color-main-text);
+    --button-active: var(--color-main-text);
+    --menu: #FF0070;
+    --without-bg-title: var(--color-main-text);
   }
 }

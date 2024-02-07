@@ -1,5 +1,4 @@
 :root{
-  --main-font: "IBM Plex Mono", Arial, sans-serif;
   --color-main-text: #f1b2ce;
   --color-title: #db00ff;
   --shadow-color: #ff0070;
@@ -11,7 +10,12 @@
   --border-color: var(--color-main-text);
   --color-section-title: var(--background-color);
   --rec-decoration: var(--shadow-color);
-  --button-hover: var(--background-color);
+  --decoration-zone: var(--shadow-color);
+  --link-hover: var(--color-main-text);
+  --button: var(--shadow-color);
+  --button-hover: #FF007066;
   --button-visible: var(--shadow-color);
+  --button-active: var(--shadow-color);
   --menu: var(--shadow-color);
+  --without-bg-title: var(--shadow-color) ;
 }
