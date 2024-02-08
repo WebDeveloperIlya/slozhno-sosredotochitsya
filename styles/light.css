@@ -1,5 +1,6 @@
 .page.theme_light{
   --color-main-text: #353430;
+  --main-font: 'IBM Plex mono';
   --color-title: #ffc2e6;
   --shadow-color: #FF8DCB;
   --background-image: url(../images/cover-image-light.png);
@@ -29,6 +30,7 @@
   }
   :root{
     --color-main-text: #353430;
+    --main-font: 'IBM Plex mono';
     --color-title: #ffc2e6;
     --shadow-color: #FF8DCB;
     --background-image: url(../images/cover-image-light.png);

@@ -2,10 +2,9 @@
 
 .page {
   color: var(--color-main-text);
-  background-color: var(--background-color);
-  --main-font: 'IBM Plex mono';
   background: var(--background-image) no-repeat top center,
   var(--background-color);
+  background-color: var(--background-color);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -20,25 +19,25 @@
 
 .header__decorated-element {
   position: absolute;
+  top: 21px;
+  right: 48px;
   display: flex;
   align-items: center;
   gap: 10px;
-  top: 21px;
-  right: 48px;
   color: var(--rec-decoration);
-  font-size: 18px;
   font-family: var(--main-font);
+  font-size: 18px;
 }
 
 .header__decorated-element::after {
   content: '';
-  border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--rec-decoration);
-  background-color: var(--rec-decoration);
   position: absolute;
   right: -20px;
   width: 10px;
   height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--rec-decoration);
+  background-color: var(--rec-decoration);
 }
 
 .decorated-zone::before {
@@ -163,14 +162,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: end;
-  margin: 55px 10px 0px 10px;
-  height: min-content;
   justify-content: end;
+  height: min-content;
+  margin: 55px 10px 0px 10px;
 }
 
 .header__description-text{
   grid-column-start: 2;
-  max-height: 117px;
   color: var(--description-text-color);
   font-family: var(--main-font);
   font-weight: 700;
@@ -233,6 +231,7 @@
 }
 
 .gallery__img {
+  display: block;
   inline-size: 100%;
 }
 
@@ -296,8 +295,8 @@
     right: 40px;
   }
   .title{
-    margin-top: 65px;
     align-items: start;
+    margin-top: 65px;
     padding: 0 10px 0 10px;
   }
   .header__description{
@@ -314,8 +313,8 @@
     padding-bottom: 15px;
   }
   .main{
-    padding: 40px 10px 0 10px;
     gap: 30px;
+    padding: 40px 10px 0 10px;
   }
   .main__section-content-text{
     padding-bottom: 20px;
@@ -325,15 +324,14 @@
     gap: 20px;
   }
   .gallery{
-    padding: 0;
     margin-bottom: 45px;
+    padding: 0;
   }
 }
 
 @media (768px <= width < 1024px){
   .footer{
     margin-top: 60px;
-    height: 122.5vh;
   }
 }
 @media (768px <= width < 1024px){
@@ -353,12 +351,12 @@
 
 @media (768px <= width < 1024px) {
   .header__theme-menu{
-    padding-top: 181px;
     margin-right: 20px;
+    padding-top: 181px;
   }
   .header__theme-menu-list{
-    min-height: 98px;
     row-gap: 10px;
+    min-height: 98px;
   }
 }
 
@@ -380,9 +378,9 @@
   .title {
     display: flex;
     justify-content: start;
-    padding-top: 175px;
     align-items: center;
     margin-left: 0;
+    padding-top: 175px;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 82.5%;
   }
@@ -390,7 +388,7 @@
 
 @media (768px <= width < 1024px){
   .header__description{
-    margin: 162px 20px 183px 0px;
+    margin: 162px 20px 183px 20px;
   }
 }
 
@@ -450,8 +448,8 @@
 
   .main__section-content-gap{
     display: contents;
-    row-gap: 20px;
     grid-column-start: 2;
+    row-gap: 20px;
   }
 
   .main__section-content-title{
@@ -478,15 +476,15 @@
 }
 
 .footer {
-  display: flex;
   position: relative;
+  display: flex;
   flex-direction: column;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  height: 100vh;
   min-width: 375px;
+  height: 100vh;
   min-height: 668px;
   padding: 20px;
 }
@@ -498,14 +496,6 @@
   padding: 0;
   text-shadow: 2px 2px 0 var(--shadow-color);
 }
-
-@media (768px <= width < 1024px){
-  .gallery__list{
-    max-height: 780px;
-  }
-}
-
-
 
 @media (min-width: 768px) {
   .gallery{
@@ -555,31 +545,26 @@
 
 @media (width >= 1024px){
   .gallery__list-item{
-    max-width: 649px;
     max-height: 260px;
   }
   .gallery__list-item:nth-child(2){
-    max-width: 315px;
     max-height: 595px;
   }
   .gallery__list-item:nth-child(3){
-    max-width: 315px;
     max-height: 768px;
   }
   .gallery__list-item:nth-child(4){
-    max-width: 315px;
     max-height: 315px;
   }
   .gallery__list-item:nth-child(5){
-    max-width: 649px;
     max-height: 428px;
   }
 }
 
 @media (width >= 1024px){
   .footer{
-    margin-top: 60px;
     min-height: 768px;
+    margin-top: 60px;
   }
   .footer__text{
     padding-top: 0;
